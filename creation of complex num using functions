@@ -1,0 +1,5 @@
+createComplex <- function(real, imaginary) {
+ return(complex(real = real, imaginary = imaginary))
+}
+complexNum <- createComplex(2, 3)
+print(complexNum)
