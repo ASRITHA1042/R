@@ -1,0 +1,37 @@
+# Function to perform addition
+add <- function(a, b) {
+  return(a + b)
+}
+
+# Function to perform subtraction
+subtract <- function(a, b) {
+  return(a - b)
+}
+
+# Function to perform multiplication
+multiply <- function(a, b) {
+  return(a * b)
+}
+
+# Function to perform division
+divide <- function(a, b) {
+  if (b != 0) {
+    return(a / b)
+  } else {
+    return("Error: Division by zero")
+  }
+}
+
+# Main function
+calculator <- function() {
+  cat("Choose an operation:\n")
+  cat("1. Addition\n")
+  cat("2. Subtraction\n")
+  cat("3. Multiplication\n")
+  cat("4. Division\n")
+  
+  choice <- 1  # Set the choice directly in the program
+  
+  if (choice >= 1 && choice <= 4) {
+    num1 <- 5  # Set the first number directly in the program
+    num2 <- 2  # Set the second number dire…
