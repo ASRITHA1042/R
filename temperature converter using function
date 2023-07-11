@@ -1,0 +1,25 @@
+celsiusToKelvin <- function(celsius) {
+  return(celsius + 273)
+}
+kelvinToCelsius <- function(kelvin) {
+  return(kelvin - 273)
+}
+converter <- function() {
+  cat("Choose an option:\n")
+  cat("1. Celsius to Kelvin\n")
+  cat("2. Kelvin to Celsius\n")
+  option <- 1  
+  if (option == 1) {
+    celsius <- 25  
+    kelvin <- celsiusToKelvin(celsius)
+    cat("Temperature in Kelvin: ", kelvin, "\n")
+  } else if (option == 2) {
+    kelvin <- 298  
+    celsius <- kelvinToCelsius(kelvin) 
+    cat("Temperature in Celsius: ", celsius, "\n")
+  } else {
+    cat("Invalid option\n")
+    return
+  }
+}
+converter()
