@@ -1,0 +1,3 @@
+gender <- c("female", "male", "female", "male", "male", "female")
+gender_factor <- factor(gender, levels = c("female", "male"))
+print(gender_factor)
